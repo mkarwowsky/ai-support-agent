@@ -1,0 +1,7 @@
+Uruchamiaj dev server tak, żeby reload patrzył tylko na kod aplikacji:
+
+python -m uvicorn app.main:app --reload --reload-dir app --host 0.0.0.0 --port 8000
+To odcina obserwację .venv.
+
+source .venv/bin/activate
+python3 -m uvicorn app.main:app --reload --reload-dir app --host 0.0.0.0 --port 8000
